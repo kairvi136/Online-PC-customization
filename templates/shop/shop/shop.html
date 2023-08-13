@@ -1,0 +1,602 @@
+{% extends 'shop/shop/base.html' %}
+{% load static %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+
+
+
+
+
+
+
+ 
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<!-- all css here -->
+<!-- bootstrap v3.3.6 css -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!-- animate css -->
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/materialdesignicons.min.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/jquery.simpleLens.css' %}">
+<!-- jquery-ui.min css -->
+<link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+<!-- meanmenu css -->
+<link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+<!-- nivo.slider css -->
+<link rel="stylesheet" href="{% static 'css/nivo-slider.css' %}">
+<!-- owl.carousel css -->
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+<!-- style css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- responsive css -->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<!-- header section end -->
+<link rel="stylesheet" href="{% static 'css/partscss.css' %}">
+       
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- pages-title-start -->
+		<div style="background:#40394a" class="pages-title section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pages-title-text text-center">
+							{% if category_slug != None %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">{{category_slug}}</h2>
+							{% else %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">Keyboards</h2>
+							{% endif %}
+							<ul class="text-left">
+								<li ><a href="\">Home </a></li>
+								<li style="color:#f4cca4"><span> // </span>Shop</li>
+								{% if category_slug != None %}
+								<li style="color:#f4cca4"><span> // </span>{{category_slug}}</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- pages-title-end -->
+        <!-- collection section start -->
+		
+		<!-- collection section end -->
+		<!-- product-grid-view content section start -->
+
+
+
+
+
+
+
+
+
+		<section style="background:#1c1427"   class="pages products-page section-padding-bottom">
+		<div class="row">
+  
+			<div style="background:#1c1427" class="col-md-3 col-6 mt-3"  >
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;color: #fff;" src="{% static '\img\3pics\k\GKBOSS-Black-Wireless-Keyboard-Mouse-SDL399013212-1-a38eb.jpg' %}">
+			  <div class="actions-btn">
+				<a href="#"><i class="mdi mdi-cart"></i></a>
+				<!-- <a href="#" data-toggle="modal" data-target="#quick-view4"><i class="mdi mdi-eye"></i></a> -->
+				<a href="#"><i class="mdi mdi-heart"></i></a>
+			</div>
+
+			
+
+			  <div class="py-3">
+				<a href="/product/apple-new-tablet" class="text-dark stretched-link f-17" style="color:#fad9d8;font-size: 10pt;">GKBOSS - Black Wireless Keyboard Mouse Combo</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 675</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1299</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">5.0</span> -->
+		  
+				  <!-- <span class="font-size-xs text-muted align-middle">(1)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\Intex-Multicolour-USB-Wired-Desktop-SDL259378400-1-d1bd5.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/bmax-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">Intex - Multicolour USB Wired Desktop Keyboard</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;">Intex - Multicolour USB Wired Desktop Keyboard</a>
+
+					<ul class="mt-1 mb-0 list-inline">
+						<li class="list-inline-item">
+						  <h3 class="font-weight-semi-bold">Rs.  725 [44% OFF]</h3>
+						</li>
+				
+						<li class="list-inline-item">
+						  <del class="font-size-sm text-muted">Rs. 1,999  (Inclusive of all taxes)</del>
+						</li>
+					  </ul>
+		  
+				<div>
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\Portronics-Grey-Bluetooth-Keyboard-Mouse-SDL103325657-1-c04ea.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;">Intex - Multicolour USB Wired Desktop Keyboard</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  725 [44% OFF]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 1,999  (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\Portronics-Key2-Combo-White-Wireless-SDL248366308-1-ac2ba.jpeg' %}">
+		  
+			  <div class="py-3">
+		  
+		  
+				<a href="/product/apple-table-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">Portronics Key 2 Combo:Multimedia Wireless Keyboard & Mouse ,White (POR 373)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 1025 [32% OFF]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 1,499  (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\Portronics-Key-5-Combo-2-SDL449738450-1-005bc.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-Galaxy-Buds" class="text-dark stretched-link f-17"style="font-size: 10pt;">Portronics Key5 Combo Multimedia Wireless Keyboard & Mouse Set/Combo, (Red)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 889</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1,999.00 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\TIZUM-Black-Wireless-Keyboard-Mouse-SDL862599174-1-f95e8.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/MOOKA-Air-Purifier-for-Home" class="text-dark stretched-link f-17"style="font-size: 10pt;">Portronics Key 2 Combo:Multimedia Wireless Keyboard & Mouse ,White (POR 373)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  1025 32% OFF</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1,499  (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\Zebronics-Zeb-K25-Black-USB-SDL973618707-1-580ec.png' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Rosewill-Air-Fryer-Convection" class="text-dark stretched-link f-17"style="font-size: 10pt;">Portronics Key5 Combo Multimedia Wireless Keyboard & Mouse Set/Combo, (Red)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 889
+						[55% Off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1,999.00 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\amkette-xcite-neo-wired-keyboard-digital-o492849257-p591218616-0-202303280301.jpeg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/origin-cm-cc-camera" class="text-dark stretched-link f-17"style="font-size: 10pt;">TIZUM - Black Wireless Keyboard Mouse Combo</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 1889 [48% OFF]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.Rs. 3,599  (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\lenovo-zg38c03319-laptop-keyboard-for-lenovo-tab-p11-pro-tablet-grey-digital-o491997406-p591043307-0-202202152247.jpeg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/5-pair-drive-rails" class="text-dark stretched-link f-17"style="font-size: 10pt;">Zebion K500 USB Keyboard, Rugged Heavy-Duty Body, Ergonomic Design</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 299
+						[53% Off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.649 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\logitech-k380-wireless-multi-device-keyboard-digital-o492573865-p590942441-0-202112081454.jpeg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-QN65QN900B" class="text-dark stretched-link f-17"style="font-size: 10pt;">Logitech K380 Wireless Multi-Device Keyboard</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 2,495
+						[40% Off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.549 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\logitech-k380-wireless-multi-device-keyboard-digital-o492573866-p590942442-0-202112081454.jpeg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/watch" class="text-dark stretched-link f-17"style="font-size: 10pt;">Logitech K380 Wireless Multi-Device Keyboard</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 2,495.00
+						[40% Off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.4,195.00 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\k\rpm-euro-games-gaming-backlit-rgb-keyboard-with-wrist-support-semi-mechanical-and-usb-black-product-images-orvijwdtt46-p594809251-0-202210261748.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung" class="text-dark stretched-link f-17"style="font-size: 10pt;">Intex IT-KBM331 Wired USB Gaming Keyboard (Black)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 690
+						[42% Off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1,199.00 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+		  </div>
+		  
+		  </div>
+		</section>
+		
+
+		
+		<!-- <section style="background:#1c1427"   class="pages products-page section-padding-bottom">
+			<div class="container">
+				<div class="row"><br>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<div class="sidebar left-sidebar">
+							<div style="background:#40394a; color:#d99879;;border-radius:20px 20px 0 0;" class="s-side-text">
+								<div class="sidebar-title clearfix text-center">
+									<h3 >Categories</h3>
+									
+								</div>
+								<div  class="sidebar-title clearfix">
+									<h4 class="floatleft"><a style="font-weight:600;color:#f4cca4"  href="{% url 'shop:shop' %}">All</a></h4>
+								</div>
+                                {% for category in categories %}
+                                <div  class="sidebar-title clearfix">
+									<h4 class="floatleft"><a style="font-weight:600;color:#f4cca4"  href="{{ category.get_category_slug_url }}">{{category.name}}</a></h4>
+								</div>
+                                {% endfor %}
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div class="right-products">
+							<div class="row">
+								<div class="col-xs-12">
+									<div style="background:#40394a;border-radius:10px;" class="section-title clearfix">
+										<ul >
+											<li>
+												<ul class="nav-view">
+													<li class="active"><a data-toggle="tab" href="#grid"> <i style="color:#d99879" class="mdi mdi-view-module"></i> </a></li>
+													<li><a data-toggle="tab" href="#list"> <i style="color:#d99879" class="mdi mdi-view-list"></i> </a></li>
+												</ul>
+											</li>
+											<li style="color:#d99879; font-size:18px" class="sort-by floatright">
+												{{products_count}} Results
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="tab-content grid-content">
+									<div class="tab-pane fade in active text-center" id="grid">
+                                        {% for product in products %}
+										<div  class="col-xs-12 col-sm-6 col-md-4">
+											<div   style="background:#40394a; ;border-radius:15px;" class="single-product">
+												<div class="product-img">
+													{% if product.discount != 0.00 %}
+													<div class="pro-type">
+														<span>Discount</span>
+													</div>
+													{% endif %}
+													{% if product.new %}
+													<div style="background:#1c1427;color:#f4cca4" class="pro-type">
+														<span>New</span>
+													</div>
+													{% endif %}
+													<a href="{{product.get_prodcut_details_url}}"><img style="width:100%; height:350px;;border-radius:15px 15px 0 0;" src="{{product.image.url}}" alt="Product Title" /></a>
+													<div class="actions-btn">
+														<a style="margin-left:20px" href="{% url 'cart:add_cart' product.id %}"><i class="mdi mdi-cart"></i></a>
+														<a href="{{product.get_prodcut_details_url}}"><i class="mdi mdi-eye"></i></a>
+													</div>
+												</div>
+												
+												<div class="product-dsc">
+													
+													<p><a style="color:#d99879" href="{{product.get_prodcut_details_url}}">{{product.name}}</a></p>
+													<span>${{product.price}}</span><br><br>
+													<div style="font-size:16px" class="rating-star">
+														<span>
+														<i class="fa fa-star{% if product.averageRating < 0.5 %}-o{% elif product.averageRating >= 0.5 and product.averageRating < 1 %}-half-o {% endif %}" aria-hidden="true"></i>
+														<i class="fa fa-star{% if product.averageRating < 1.5 %}-o{% elif product.averageRating >= 1.5 and product.averageRating < 2 %}-half-o {% endif %}" aria-hidden="true"></i>
+														<i class="fa fa-star{% if product.averageRating < 2.5 %}-o{% elif product.averageRating >= 2.5 and product.averageRating < 3 %}-half-o {% endif %}" aria-hidden="true"></i>
+														<i class="fa fa-star{% if product.averageRating < 3.5 %}-o{% elif product.averageRating >= 3.5 and product.averageRating < 4 %}-half-o {% endif %}" aria-hidden="true"></i>
+														<i class="fa fa-star{% if product.averageRating < 4.5 %}-o{% elif product.averageRating >= 4.5 and product.averageRating < 5 %}-half-o {% endif %}" aria-hidden="true"></i>
+														&nbsp;<span style="font-size:16px">(<b>{{product.countReview}}</b> reviews)</span>
+														</span>
+													</div>
+													
+												</div>
+											</div>
+										</div>
+										{% endfor %}
+									</div>
+									<div class="tab-pane fade in" id="list">
+                                        {% for product in products %}
+										<div class="col-xs-12">
+											<div class="single-list-view">
+												<div style="width:100%; height:350px" class="row">
+													<div class="col-xs-12 col-md-4">
+														<div class="list-img">
+															<div class="product-img">
+															{% if product.discount != 0.00 %}
+															<div class="pro-type">
+																<span>Discount</span>
+															</div>
+															{% endif %}
+																<a href="{{product.get_prodcut_details_url}}"><img style="width:100%; height:350px; border-radius:20px 0 0 20px;" src="{{product.image.url}}" alt="Product Title" /></a>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-8">
+														<div style="height:350px; border-radius:0 20px 20px 0;"  class="list-text">
+															
+															<div style="font-size:16px" class="rating-star floatright">
+																<span>
+																<i class="fa fa-star{% if product.averageRating < 0.5 %}-o{% elif product.averageRating >= 0.5 and product.averageRating < 1 %}-half-o {% endif %}" aria-hidden="true"></i>
+																<i class="fa fa-star{% if product.averageRating < 1.5 %}-o{% elif product.averageRating >= 1.5 and product.averageRating < 2 %}-half-o {% endif %}" aria-hidden="true"></i>
+																<i class="fa fa-star{% if product.averageRating < 2.5 %}-o{% elif product.averageRating >= 2.5 and product.averageRating < 3 %}-half-o {% endif %}" aria-hidden="true"></i>
+																<i class="fa fa-star{% if product.averageRating < 3.5 %}-o{% elif product.averageRating >= 3.5 and product.averageRating < 4 %}-half-o {% endif %}" aria-hidden="true"></i>
+																<i class="fa fa-star{% if product.averageRating < 4.5 %}-o{% elif product.averageRating >= 4.5 and product.averageRating < 5 %}-half-o {% endif %}" aria-hidden="true"></i>
+																&nbsp;<span style="font-size:16px">(<b>{{product.countReview}}</b> reviews)</span>
+																</span>
+															</div>
+															<h3 style="color:#d99879">{{product.name}}</h3>
+															<h5>{% if product.discount != 0.00 %}<del>${{product.discount}}</del>{% endif %} ${{product.price}}</h5>
+															<p>{{product.description}}.</p>
+															<div class="list-btn">
+
+																<a href="{{product.get_prodcut_details_url}}" class="btn btn-warning" style="background:none; color:#f4cca4">View Details <i class="mdi mdi-eye"></i></a>
+																<a href="{% url 'cart:add_cart' product.id %}" class="btn " style="color:#1c1427;background:#f4cca4">add to cart <i class="mdi mdi-cart-outline"></i></a>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+                                        {% endfor %}
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div  class="col-sm-12">
+									<div style="background:#40394a" class="pagnation-ul">
+									{% if products.has_other_pages %}
+										<ul class="clearfix">
+											{% if products.has_previous %}
+											<li><a href="?page={{products.previous_page_number}}"><i style="color:#f4cca4" class="mdi mdi-arrow-left-bold"></i></a></li>
+											{% else %}
+											<li><a href="#"><i class="mdi mdi-arrow-left-bold"></i></a></li>
+											{% endif %}
+											
+											{% for x in products.paginator.page_range %}
+												{% if products.number == x %}
+												<li ><a href="#">{{x}}</a></li>
+												{% else %}
+												<li><a  style="color:#f4cca4" href="?page={{x}}">{{x}}</a></li>
+												{% endif %}
+											{% endfor %}
+											
+											{% if products.has_next %}
+											<li ><a href="?page={{products.next_page_number}}"><i style="color:#f4cca4" class="mdi mdi-arrow-right-bold"></i></a></li>
+											{% else %}
+											<li><a  href="#"><i class="mdi mdi-arrow-right-bold"></i></a></li>
+											{% endif %}
+										</ul>
+									{% endif %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	 -->
+{% endblock content %}

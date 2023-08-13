@@ -1,0 +1,467 @@
+{% extends 'shop/shop/base.html' %}
+{% load static %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+
+
+
+
+
+
+
+ 
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<!-- all css here -->
+<!-- bootstrap v3.3.6 css -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!-- animate css -->
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/materialdesignicons.min.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/jquery.simpleLens.css' %}">
+<!-- jquery-ui.min css -->
+<link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+<!-- meanmenu css -->
+<link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+<!-- nivo.slider css -->
+<link rel="stylesheet" href="{% static 'css/nivo-slider.css' %}">
+<!-- owl.carousel css -->
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+<!-- style css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- responsive css -->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<!-- header section end -->
+<link rel="stylesheet" href="{% static 'css/partscss.css' %}">
+       
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- pages-title-start -->
+		<div style="background:#40394a" class="pages-title section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pages-title-text text-center">
+							{% if category_slug != None %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">{{category_slug}}</h2>
+							{% else %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">Processor</h2>
+							{% endif %}
+							<ul class="text-left">
+								<li ><a href="\">Home </a></li>
+								<li style="color:#f4cca4"><span> // </span>Shop</li>
+								{% if category_slug != None %}
+								<li style="color:#f4cca4"><span> // </span>{{category_slug}}</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- pages-title-end -->
+        <!-- collection section start -->
+		
+		<!-- collection section end -->
+		<!-- product-grid-view content section start -->
+
+
+
+
+
+
+
+
+
+		<section style="background:#1c1427"   class="pages products-page section-padding-bottom">
+		<div class="row">
+  
+			<div style="background:#1c1427" class="col-md-3 col-6 mt-3"  >
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;color: #fff;" src="{% static 'img\3pics\acceries\l1.jpg' %}">
+			  <div class="actions-btn">
+				<a href="#"><i class="mdi mdi-cart"></i></a>
+				<a href="#"><i class="mdi mdi-heart"></i></a>
+			</div>
+
+			
+
+			  <div class="py-3">
+				<a href="/product/apple-new-tablet" class="text-dark stretched-link f-17" style="color:#fad9d8;font-size: 10pt;"> Lenovo IdeaPad 3 11th Gen Intel Core i3 15.6" FHD Thin & Light Laptop(8GB/512GB SSD/Windows 11/Office 2021/2Yr Warranty/3months Xbox Game Pass/Platinum Grey/1.7Kg), 81X800N2IN
+                    </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs 36,158
+                       
+                       
+                         [40% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 59,890</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">5.0</span> -->
+		  
+				  <!-- <span class="font-size-xs text-muted align-middle">(1)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l2.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/bmax-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">(Renewed) Dell Latitude E5470 Intel Core i5 6th Gen.6200u Processor 14.1 Inches HD Screen Notebook Computer (8 GB Ram & 256 GB SSD, Windows 10 Pro, 1.71Kg)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;"></a>
+
+					<ul class="mt-1 mb-0 list-inline">
+						<li class="list-inline-item">
+						  <h3 class="font-weight-semi-bold">Rs. 17,999
+                           
+              [ 64% off]</h3>
+						</li>
+				
+						<li class="list-inline-item">
+						  <del class="font-size-sm text-muted">Rs. 49,999 (Inclusive of all taxes)</del>
+						</li>
+					  </ul>
+		  
+				<div>
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l3.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;">HP 14s, 11th Gen Intel Core i3-1115G4, 8GB RAM/256GB SSD 14-inch(35.6 cm) Micro-Edge, Anti-Glare, FHD Laptop/Alexa Built-in/Win 11/Intel UHD Graphics/Dual Speakers/MSO 2021/1.41 Kg, 14s-dy2507TU</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  37,490
+                       
+                      
+                         [21% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.47,206 (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l4.jpg' %}">
+		  
+			  <div class="py-3">
+		  
+		  
+				<a href="/product/apple-table-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">HP 15s,11th Gen Intel Core i3-1115G4 8GB RAM/512GB SSD 15.6"(39.6 cm) FHD/Alexa Built-in/Win 11/Intel UHD Graphics/MSO 2021/1.69 Kg, 15s-fq2673TU, 5% Instant Off on APay ICICI CreditCard (Prime only)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.41,490
+                      
+                        [20% OFF]
+                       </h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 51,812 (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l5.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-Galaxy-Buds" class="text-dark stretched-link f-17"style="font-size: 10pt;">Apple 2020 MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey
+                    </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 84,990
+                        
+                       
+                         [15%  off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.99,900 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l6.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/MOOKA-Air-Purifier-for-Home" class="text-dark stretched-link f-17"style="font-size: 10pt;">HP 255 G8 Laptop with AMD Athlon Silver 3050U APU/ 8GB Ram/ 256GB SSD/DOS/AMD Radeon Vega 8 Mobile Graphics/39.6 cm HD (1366 x 768), SVA, Anti-Glare WLED/Black/1 Year Onsite Warranty</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 25,999
+                     
+                       [ 74% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.  99,999
+                        (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l7.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Rosewill-Air-Fryer-Convection" class="text-dark stretched-link f-17"style="font-size: 10pt;">HP 15s, 11th Gen Intel Core i3 8GB RAM/1TB HDD+256 GB SSD 15.6-inches/39.6 cm FHD Laptop/Windows 11/Intel UHD Graphics/Dual Speakers/Alexa/MSO/Fast Charge/1.75 Kg, 15s-du3614TU</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.39,990
+                       
+                    
+                        [22% off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 51,470(Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l8.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/origin-cm-cc-camera" class="text-dark stretched-link f-17"style="font-size: 10pt;">HP 15s AMD Ryzen 3-5300U 15.6inch(39.6cm) FHD Laptop (8GB RAM/512GB SSD, Micro-Edge, Anti-Glare Display/Radeon Graphics/Windows 11 Home/Alexa/Dual Speakers/Ms Office/1.69Kg, 15s-Eq2143au)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.37,990
+                        
+                      
+                       [19% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 47,142 (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l9.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/5-pair-drive-rails" class="text-dark stretched-link f-17"style="font-size: 10pt;">HP 15s, 11th Gen Intel Core i5-1155G7, 15.6 inch(39.6cm) FHD Anti-Glare Laptop(8GB RAM/512 GB SSD/Intel Iris Xe Graphics/Win 11/Dual Speakers/Backlit KeyboardAlexa Built-in/MSO 2021) 15s-fr4000TU
+                </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  53,990
+                        [11% OFF]
+                        
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.  60,599   (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l10.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-QN65QN900B" class="text-dark stretched-link f-17"style="font-size: 10pt;">Lenovo Ideapad 3 AMD Ryzen 5 5500U 15.6"(39.62cm) FHD T&L Laptop (8GB/512GB SSD/Win 11/MSO 2021/Backlit Keyboard/2Yr Warranty/1.65Kg),82KU017KIN, 5% Instant Off on APay ICICI CreditCard (Prime only)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.43,890
+                        
+                        [36%  off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 68,490 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l11.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/watch" class="text-dark stretched-link f-17"style="font-size: 10pt;">HP 14s, Intel Celeron N4500, 8GB RAM/256GB SSD 14-inches/35.6 cm HD, Micro-Edge Display/Alexa Built-in/Windows 11/Intel UHD Graphics/Dual Speakers/MSO 2021/1.46 Kg, 14s-dq3037tu</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.25,990
+                     
+
+                         [ 30% off]
+					</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.  36,965 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\l12.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung" class="text-dark stretched-link f-17"style="font-size: 10pt;">
+                    MSI Modern 15, Intel 13th Gen. i7-1355U, 40CM FHD 60Hz Laptop (8GB/512GB NVMe SSD/Windows 11 Home/Iris Xe Graphics/Star Blue/1.7Kg), B13M-290IN				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 82,033
+                       
+                         [2%  off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.83,990 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+		  </div>
+		  
+		  </div>
+		</section>
+		
+
+		
+		
+{% endblock content %}

@@ -1,0 +1,458 @@
+{% extends 'shop/shop/base.html' %}
+{% load static %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+
+
+
+
+
+
+
+ 
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<!-- all css here -->
+<!-- bootstrap v3.3.6 css -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!-- animate css -->
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/materialdesignicons.min.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/jquery.simpleLens.css' %}">
+<!-- jquery-ui.min css -->
+<link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+<!-- meanmenu css -->
+<link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+<!-- nivo.slider css -->
+<link rel="stylesheet" href="{% static 'css/nivo-slider.css' %}">
+<!-- owl.carousel css -->
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+<!-- style css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- responsive css -->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<!-- header section end -->
+<link rel="stylesheet" href="{% static 'css/partscss.css' %}">
+       
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- pages-title-start -->
+		<div style="background:#40394a" class="pages-title section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pages-title-text text-center">
+							{% if category_slug != None %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">{{category_slug}}</h2>
+							{% else %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">Processor</h2>
+							{% endif %}
+							<ul class="text-left">
+								<li ><a href="\">Home </a></li>
+								<li style="color:#f4cca4"><span> // </span>Shop</li>
+								{% if category_slug != None %}
+								<li style="color:#f4cca4"><span> // </span>{{category_slug}}</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- pages-title-end -->
+        <!-- collection section start -->
+		
+		<!-- collection section end -->
+		<!-- product-grid-view content section start -->
+
+
+
+
+
+
+
+
+
+		<section style="background:#1c1427"   class="pages products-page section-padding-bottom">
+		<div class="row">
+  
+			<div style="background:#1c1427" class="col-md-3 col-6 mt-3"  >
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;color: #fff;" src="{% static 'img\3pics\acceries\ls1.jpg' %}">
+			  <div class="actions-btn">
+				<a href="#"><i class="mdi mdi-cart"></i></a>
+				<a href="#"><i class="mdi mdi-heart"></i></a>
+			</div>
+
+			
+
+			  <div class="py-3">
+				<a href="/product/apple-new-tablet" class="text-dark stretched-link f-17" style="color:#fad9d8;font-size: 10pt;"> PLIXIO Aluminum Tabletop Laptop Stand Ergonomic Foldable Portable Laptop Stand Holder Compatible for MacBook, HP, Dell, Lenovo & All Other Notebook (Sliver)
+                    </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs 1,499
+                       
+                         [40% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 2,499 </del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">5.0</span> -->
+		  
+				  <!-- <span class="font-size-xs text-muted align-middle">(1)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls2.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/bmax-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">PLIXIO Aluminum Tabletop Laptop Stand Ergonomic Foldable Portable Laptop Stand Holder Compatible for MacBook, HP, Dell, Lenovo & All Other Notebook (Sliver)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;"></a>
+
+					<ul class="mt-1 mb-0 list-inline">
+						<li class="list-inline-item">
+						  <h3 class="font-weight-semi-bold">Rs.  2,099
+                           
+              [ 65% off]</h3>
+						</li>
+				
+						<li class="list-inline-item">
+						  <del class="font-size-sm text-muted">Rs. 5,999 (Inclusive of all taxes)</del>
+						</li>
+					  </ul>
+		  
+				<div>
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls3.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;">STRIFF Adjustable Laptop Tabletop Stand Patented Riser Ventilated Portable Foldable Compatible with MacBook Notebook Tablet Tray Desk Table Book with Free Phone Stand (Black)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 399
+                      
+                         [73% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1,499 (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls4.jpg' %}">
+		  
+			  <div class="py-3">
+		  
+		  
+				<a href="/product/apple-table-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for MacBook, HP, Dell, Lenovo & All Other Notebook (Silver)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  660
+                        [67% OFF]
+                       </h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 1,999 (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls5.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-Galaxy-Buds" class="text-dark stretched-link f-17"style="font-size: 10pt;">smashtronics - Adjustable Aluminum Laptop Stand - Foldable, Ventilated, Portable Stand for Desk & Tabletop, Compatible with MacBook, HP, Dell, Lenovo, and More, Ergonomic Design with Carry Pouch
+                    </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  599
+                       
+                         [60% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 1,499 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls6.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/MOOKA-Air-Purifier-for-Home" class="text-dark stretched-link f-17"style="font-size: 10pt;">AmazonBasics Aluminum Foldable Tabletop Laptop Stand For Laptops Up To (15 Inches/39.6Cm, Silver)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.1,089
+                     
+                       [36% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1,700(Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls7.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Rosewill-Air-Fryer-Convection" class="text-dark stretched-link f-17"style="font-size: 10pt;">STRIFF Adjustable Laptop Tabletop Stand Patented Riser Ventilated Portable Foldable Compatible with MacBook Notebook Tablet Tray Desk Table Book with Free Phone Stand (Black)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.399
+                    
+                        [73% off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.1,499(Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls8.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/origin-cm-cc-camera" class="text-dark stretched-link f-17"style="font-size: 10pt;">proffisy Laptop Stand Ergonomic Height Angle Adjustable Laptop Riser for Desk with Honeycomb Heat-Vent,Compatible for Laptop MacBook Air Pro Dell XPS All Laptops 11-17",Space Dark</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 4,199
+                      
+                       [53% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 8,999  (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls9.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/5-pair-drive-rails" class="text-dark stretched-link f-17"style="font-size: 10pt;">ZEBRONICS XPON ONU (Optical Network Unit) | Fibre Device | Match LB-Link, 2GB,ddr3_sdram,pci_e
+                </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 2,632 [71% OFF]
+                        
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 8,999    (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls10.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-QN65QN900B" class="text-dark stretched-link f-17"style="font-size: 10pt;">ZEBRONICS Aluminium Alloy Laptop Stand, Compatible with 9-15.6 inch Laptops, 7 Angles Adjustable Tabletop, Anti Slip Silicon Rubber Pads, Foldable, Velvet Pouch Inside, Zeb-NS2000 (Dark Grey)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.875
+                        [56% off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.  1,999  (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls11.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/watch" class="text-dark stretched-link f-17"style="font-size: 10pt;">Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for MacBook, HP, Dell, Lenovo & All Other Notebook (Silver)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. ₹660
+                        M.R.P.: ₹1,999
+                         [67% off]
+					</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.2,099 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\acceries\ls12.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung" class="text-dark stretched-link f-17"style="font-size: 10pt;">
+                    AmazonBasics Monitor Stand, Height Adjustable Arm Mount- Steel		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  2,409
+                    
+                         [22% off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.3,100 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+		  </div>
+		  
+		  </div>
+		</section>
+		
+
+		
+		
+{% endblock content %}

@@ -1,0 +1,450 @@
+{% extends 'shop/shop/base.html' %}
+{% load static %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+
+
+
+
+
+
+
+ 
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<!-- all css here -->
+<!-- bootstrap v3.3.6 css -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!-- animate css -->
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/materialdesignicons.min.css' %}">
+<!-- pe-icon-7-stroke -->
+<link rel="stylesheet" href="{% static 'css/jquery.simpleLens.css' %}">
+<!-- jquery-ui.min css -->
+<link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+<!-- meanmenu css -->
+<link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+<!-- nivo.slider css -->
+<link rel="stylesheet" href="{% static 'css/nivo-slider.css' %}">
+<!-- owl.carousel css -->
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+<!-- style css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- responsive css -->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<!-- header section end -->
+<link rel="stylesheet" href="{% static 'css/partscss.css' %}">
+       
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- pages-title-start -->
+		<div style="background:#40394a" class="pages-title section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pages-title-text text-center">
+							{% if category_slug != None %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">{{category_slug}}</h2>
+							{% else %}
+							<h2 style="color:#f4cca4;text-transform: capitalize;">Processor</h2>
+							{% endif %}
+							<ul class="text-left">
+								<li ><a href="\">Home </a></li>
+								<li style="color:#f4cca4"><span> // </span>Shop</li>
+								{% if category_slug != None %}
+								<li style="color:#f4cca4"><span> // </span>{{category_slug}}</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- pages-title-end -->
+        <!-- collection section start -->
+		
+		<!-- collection section end -->
+		<!-- product-grid-view content section start -->
+
+
+
+
+
+
+
+
+
+		<section style="background:#1c1427"   class="pages products-page section-padding-bottom">
+		<div class="row">
+  
+			<div style="background:#1c1427" class="col-md-3 col-6 mt-3"  >
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;color: #fff;" src="{% static 'img\3pics\mou\g1.jpg' %}">
+			  <div class="actions-btn">
+				<a href="#"><i class="mdi mdi-cart"></i></a>
+				<a href="#"><i class="mdi mdi-heart"></i></a>
+			</div>
+
+			
+
+			  <div class="py-3">
+				<a href="/product/apple-new-tablet" class="text-dark stretched-link f-17" style="color:#fad9d8;font-size: 10pt;"> GIGABYTE GeForce GV-N710D3-2GL 2GB PCI-Express pci_e ddr3_sdram Graphics Card (Black)
+                    </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs 3,696
+                         [60% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.9,200 </del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="fa fa-star text-warning font-size-xs mr-n1" aria-hidden="true"></span> -->
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">5.0</span> -->
+		  
+				  <!-- <span class="font-size-xs text-muted align-middle">(1)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g2.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/bmax-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">Zotac GeForce GT 1030 2GB GDDR5 64-bit PCI_E Graphic card (ZT-P10300A-10L)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;"></a>
+
+					<ul class="mt-1 mb-0 list-inline">
+						<li class="list-inline-item">
+						  <h3 class="font-weight-semi-bold">Rs.  8,149
+              [45% off]</h3>
+						</li>
+				
+						<li class="list-inline-item">
+						  <del class="font-size-sm text-muted">Rs. 14,800 (Inclusive of all taxes)</del>
+						</li>
+					  </ul>
+		  
+				<div>
+				  
+				  <!-- <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span> -->
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g3.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung-tablet" class="text-dark stretched-link f-17" style="font-size: 10pt;">Zotac Gaming GeForce GTX 1660Ti Twin Fan 6GB GDDR6 Graphics Card</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. ₹29,990
+                         [60% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.75,000 (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g4.jpg' %}">
+		  
+			  <div class="py-3">
+		  
+		  
+				<a href="/product/apple-table-ipad" class="text-dark stretched-link f-17"style="font-size: 10pt;">Zotac Gaming GeForce GTX 1660 Twin Fan</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 27,499 [50% OFF]
+                       </h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.55,000  (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g5.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-Galaxy-Buds" class="text-dark stretched-link f-17"style="font-size: 10pt;">ASUS Dual AMD Radeon RX 6700 XT Standard Edition 12GB GDDR6 Gaming Graphics Card (AMD RDNA 2, PCIe 4.0, 12GB pci_e_x16 GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, 0dB Technology)
+                    </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. ₹35,450
+                         [ 45% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 65,000 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g6.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/MOOKA-Air-Purifier-for-Home" class="text-dark stretched-link f-17"style="font-size: 10pt;">Sapphire Technologies Pulse AMD Radeon RX 6750 XT pci_e_x16 Graphic Card with 12 GB GDDR6, AMD RDNA2</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.37,790
+                       [33% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 56,250 (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g7.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Rosewill-Air-Fryer-Convection" class="text-dark stretched-link f-17"style="font-size: 10pt;">Sapphire Pulse AMD Radeon RX 6600 Graphic Card with 8 GB GDDR6, AMD RDNA 2, pci_e_x16</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 25,990
+                        [74% off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 1,00,000(Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g8.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/origin-cm-cc-camera" class="text-dark stretched-link f-17"style="font-size: 10pt;">Sapphire AMD Radeon RX 6700 gddr6 pci_e_x16 Graphic Card with 10 GB GDDR6, AMD RDNA</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 30,599
+                       [32% off]</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.45,000  (Inclusive of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g9.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/5-pair-drive-rails" class="text-dark stretched-link f-17"style="font-size: 10pt;">ZEBRONICS XPON ONU (Optical Network Unit) | Fibre Device | Match LB-Link, 2GB,ddr3_sdram,pci_e
+                </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 2,632 [71% OFF]
+                        
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 8,999    (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g10.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/Samsung-QN65QN900B" class="text-dark stretched-link f-17"style="font-size: 10pt;">GIGABYTE NVIDIA GeForce RTX 3060 WINDFORCE OC 12GB GDDR6 pci_e_x16 Graphics Card (GV-N3060WF2OC-12GD)</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.31,495
+                       
+                        [64%  off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs. 87,000  (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g11.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/watch" class="text-dark stretched-link f-17"style="font-size: 10pt;">Graphics Card Bracket, RGB Graphics Card Rack Vertical GPU Support Bracket 3pin+4pin Adjustable Height ARGB Graphics Card GPU Brace Support Video Card Sag Holder Bracket, GPU Holder Holster Bracket</a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs. 1,199
+                         [43% off]
+					</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.2,099 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+			<div class="col-md-3 col-6 mt-3">
+			  <img class="w-100 rounded-lg" style="height: 220px;object-fit:cover;" src="{% static 'img\3pics\mou\g12.jpg' %}">
+		  
+			  <div class="py-3">
+				<a href="/product/samsung" class="text-dark stretched-link f-17"style="font-size: 10pt;">
+                    Sapphire Pulse AMD Radeon RX 6500 XT Gaming Graphics Card with 4 GB GDDR6, AMD RDNA 2, pci_e_x4 </a>
+		  
+				<ul class="mt-1 mb-0 list-inline">
+				  <li class="list-inline-item">
+					<h3 class="font-weight-semi-bold">Rs.  14,994
+                         [42% off]
+						</h3>
+				  </li>
+		  
+				  <li class="list-inline-item">
+					<del class="font-size-sm text-muted">Rs.26,047 (Incl. of all taxes)</del>
+				  </li>
+				</ul>
+		  
+				<div>
+				  
+				  <span class="font-weight-semi-bold text-warning pl-1 align-middle">0</span>
+		  
+				  <span class="font-size-xs text-muted align-middle">(0)</span>
+				</div>
+		  
+			  </div>
+			</div>
+			
+		  </div>
+		  
+		  </div>
+		</section>
+		
+
+		
+		
+{% endblock content %}
